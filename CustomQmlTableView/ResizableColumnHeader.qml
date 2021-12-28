@@ -45,7 +45,7 @@ ListView {
             }
         }
     }
-    onCountChanged:        modelCountChanged()
+    //onCountChanged:        modelCountChanged()
     Component.onCompleted: resetColumns()
 
     function columnWidthProvider(column) {
@@ -56,7 +56,7 @@ ListView {
         for (var i=0; i<count; i++) len.push(defaultWidth)
     }
     function modelCountChanged() {
-        resetColumns()
+        //resetColumns()
         root.columnWidthChanged()
     }
 }
